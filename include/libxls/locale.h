@@ -41,4 +41,4 @@ typedef locale_t xls_locale_t;
 
 xls_locale_t xls_createlocale(void);
 void xls_freelocale(xls_locale_t locale);
-size_t xls_wcstombs_l(char *restrict s, const wchar_t *restrict pwcs, size_t n, xls_locale_t loc);
+size_t xls_wcstombs_l(char * s, const wchar_t * pwcs, size_t n, xls_locale_t loc);

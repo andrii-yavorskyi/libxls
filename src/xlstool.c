@@ -33,7 +33,7 @@
  *
  */
 
-#include "config.h"
+#include "../include/config.h" 
 
 #include <sys/types.h>
 #include <wchar.h>

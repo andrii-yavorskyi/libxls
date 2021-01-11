@@ -53,4 +53,9 @@ typedef unsigned __int64	unsigned64_t;
 typedef uint64_t			unsigned64_t;
 #endif
 
+
+#ifndef ssize_t
+typedef long ssize_t;
+#endif
+
 #endif

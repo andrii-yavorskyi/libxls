@@ -28,7 +28,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include "config.h"
+#include "../include/config.h"
 #include <stdlib.h>
 #include "../include/libxls/locale.h"
 
@@ -50,7 +50,7 @@ void xls_freelocale(xls_locale_t locale) {
 #endif
 }
 
-size_t xls_wcstombs_l(char *restrict s, const wchar_t *restrict pwcs, size_t n, xls_locale_t loc) {
+size_t xls_wcstombs_l(char *s, const wchar_t *pwcs, size_t n, xls_locale_t loc) {
 #if defined(_WIN32) || defined(WIN32) || defined(_WIN64) || defined(WIN64) || defined(WINDOWS)
     return _wcstombs_l(s, pwcs, n, loc);
 #elif defined(HAVE_WCSTOMBS_L)
